@@ -44,8 +44,8 @@ public class Competition {
             Collections.sort(participants);
             bfw.write(participants.toString());
             bfw.flush();
-        } catch (InputMismatchException | IOException ex) {
-            System.out.println("Wynik musi być wyrażony liczbowo");
+        } catch (IOException ex) {
+            System.out.println("Nie udało się zapisać pliku!");
         }
     }
 }
